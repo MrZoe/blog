@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="../static/detail/detail_style.css">
+        <style media="screen">
+
+        </style>
+    </head>
+    <body>
+        <div id='wrapper'>
+            <div class='header'>
+                <a href="/" class="name">Zelda</a>
+                <p>
+                    <a href="/fe" class="tag">前端</a>
+                    <a href="/be" class="tag">后端</a>
+                    <a href="/note" class="tag">笔记</a>
+                    <a href="/life" class="tag">生活</a>
+                </p>
+            </div>
+            <div class="main" id='app'>
+                <div class="title">
+                    <p class="date">{{ date }}</p>
+                    <h1 id='title'>{{ title }}</h1>
+                </div>
+                <div class="content" v-html="compiledMarkdown" >
+                </div>
+            </div>
+            <div class="foot">
+                <a href="#" class="blog-nav" id='left'>< 上一篇</a>
+                <a href="#" class="blog-nav" id='right'>下一篇 ></a>
+            </div>
+        </div>
+        <script src="https://cdn.bootcss.com/marked/0.3.6/marked.min.js"></script>
+        <script src='../static/public/vue.min.js'></script>
+        <script src="../static/public/axios.min.js"></script>
+        <script src='../static/detail/detail.js'></script>
+        <script src="http://cdn.bootcss.com/highlight.js/8.0/highlight.min.js"></script>
+
+    </body>
+</html>

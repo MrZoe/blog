@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "start": "pm2 start app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "mongodb": "^2.2.29",
+    "nodemon": "^1.11.0"
+  }
+}

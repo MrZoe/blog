@@ -1,0 +1,156 @@
+ ul {
+  list-style-type: none;
+  padding: 0;
+  padding-top: 4px;
+}
+ ul li {
+  position: relative;
+  padding: 25px 0 5px;
+  border-bottom: 1px solid #e6e6e6;
+}
+ ul li:first-child {
+  margin-top: -40px;
+}
+ h2,
+ h3 {
+  letter-spacing: 1px;
+  margin: 0;
+  text-transform: uppercase;
+}
+ h2 {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-left: 120px;
+}
+ h2 a {
+  color: #444;
+  transition: all 0.1s ease;
+}
+
+ h3 {
+  font-size: 13px;
+  color: #999;
+  position: absolute;
+  left: 0;
+  top: 33px;
+}
+@media screen and (max-width: 420px) {
+   h2 {
+    font-size: 16px;
+    margin-left: 0;
+  }
+   h2 a:hover {
+    color: #f66;
+  }
+   h3 {
+    font-size: 11px;
+    position: static;
+    margin-bottom: 10px;
+  }
+   ul li {
+    padding: 18px 0 20px;
+  }
+   ul li:first-child {
+    margin-top: -35px;
+  }
+}
+
+
+
+body {
+  font-family: "Roboto", "Helvetica Neue", "Hiragino Sans GB", "LiHei Pro", Arial, serif;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  word-spacing: 2px;
+  color: #666;
+  margin: 0;
+}
+
+img {
+    margin-right: -7px;
+    margin-bottom: -1px;
+  border: none;
+  height: 11px;
+  width: 11px;
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+.header {
+  letter-spacing: 5px;
+  margin: 50px auto 15px;
+  text-align: center;
+}
+.header a {
+  font-size: 15px;
+  color: #444;
+}
+.links {
+  text-align: center;
+  font-family: "Roboto", "Helvetica Neue", "Hiragino Sans GB", "LiHei Pro", Arial, serif;
+  color: #999;
+  font-size: 24px;
+  margin: 0;
+}
+.links a {
+  cursor: pointer;
+  padding: 2px;
+  margin: 0 3px;
+}
+
+.links img {
+  width: 15px;
+  height: 15px;
+}
+.header,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", "Helvetica Neue", "Hiragino Sans GB", "LiHei Pro", Arial, sans-serif;
+  font-weight: 400;
+  color: #444;
+}
+ .main {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 50px 30px 50px;
+  position: relative;
+  border-top: 1px solid #333;
+}
+@media screen and (max-width: 420px) {
+  .header {
+    margin: 40px auto 10px;
+  }
+  .header a {
+    font-size: 14px;
+  }
+}
+
+.tag {
+    font-size: 13px;
+    word-spacing: 8px;
+    border-right: 1px solid #444;
+    padding: 0 19px;
+    transition: all 0.3s ease;
+}
+
+.tag:first-child {
+    border-left: 1px solid #444;
+}
+
+.tag:hover {
+    color: #f33;
+}
+
+h2 > a:hover {
+    color: #f33;
+}
