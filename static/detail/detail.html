@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title v-text='title'></title>
         <link rel="stylesheet" href="../static/detail/detail_style.css">
         <style media="screen">
 
@@ -21,8 +21,8 @@
             </div>
             <div class="main" id='app'>
                 <div class="title">
-                    <p class="date">{{ date }}</p>
-                    <h1 id='title'>{{ title }}</h1>
+                    <p class="date" v-text='date'></p>
+                    <h1 id='title' v-text='title'></h1>
                 </div>
                 <div class="content" v-html="compiledMarkdown" >
                 </div>
