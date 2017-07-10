@@ -133,7 +133,7 @@ a:hover {
 }
 
 
-.hljs {
+pre {
   display: block;
   overflow-x: auto;
   padding: 0.5em;
@@ -141,7 +141,7 @@ a:hover {
   background: #282c34;
 }
 
-.hljs-comment,
+code,
 .hljs-quote {
   color: #5c6370;
   font-style: italic;
