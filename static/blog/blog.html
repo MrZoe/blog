@@ -10,10 +10,10 @@
             <div class='header'>
                 <a href="#">Zelda</a>
                 <p>
-                    <a href="/tag#fe" class="tag">前端</a>
-                    <a href="/tag#be" class="tag">后端</a>
-                    <a href="/tag#note" class="tag">笔记</a>
-                    <a href="/tag#life" class="tag">生活</a>
+                    <a href="/tag?search=fe" class="tag">前端</a>
+                    <a href="/tag?search=be" class="tag">后端</a>
+                    <a href="/tag?search=note" class="tag">笔记</a>
+                    <a href="/tag?search=life" class="tag">生活</a>
                 </p>
             </div>
             <!-- <hr> -->
@@ -23,7 +23,7 @@
                         <h3 class='date' v-text='o.ct'></h3>
                         <h2><a v-bind:href='o._id' v-text='o.title'></a></h2>
                         <p>
-                            <a href="#" class="tag" v-for='tag in o.tags' v-text='tag'>
+                            <a href="" class="tag" v-for='tag in o.tags' v-text='tag'>
                                 <img src="./static/blog/tag.png" alt="">
                             </a>
                         </p>
