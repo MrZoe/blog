@@ -92,7 +92,6 @@ const getAll = cal => {
 }
 
 const getArticleByTags = (cal, tag) => {
-    console.log('get article by tags', )
     findArticleByTags(r => {
         cal(r)
     }, tag)
