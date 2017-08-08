@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Zelda</title>
+        <link rel="stylesheet" href="static/topic/topic_style.css">
+    </head>
+    <body>
+        <div id='wrapper'>
+            <div class='header'>
+                <a href="#">Zelda</a>
+                <p>
+                    <a href="/tag?search=fe" class="tag">前端</a>
+                    <a href="/tag?search=be" class="tag">后端</a>
+                    <a href="/tag?search=note" class="tag">笔记</a>
+                    <a href="/tag?search=life" class="tag">生活</a>
+                </p>
+            </div>
+            <!-- <hr> -->
+            <div class='main'>
+                <ul id='app'>
+                    <li v-for='o in articleList'>
+                        <h3 class='date' v-text='o.ct'></h3>
+                        <h2><a v-bind:href='o._id' v-text='o.title'></a></h2>
+                        <p>
+                            <a href="/tag?search=" class="tag" v-for='tag in o.tags' v-text='tag'>
+                                <img src="./static/blog/tag.png" alt="">
+                            </a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script src='static/public/vue.min.js'></script>
+        <script src="static/public/axios.min.js"></script>
+        <script src='static/topic/topic.js'></script>
+    </body>
+</html>
