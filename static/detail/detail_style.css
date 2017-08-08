@@ -125,13 +125,16 @@ a:hover {
 }
 
 #left {
-    left: 50px
+    left: 50px;
 }
 
 #right {
-    right: 50px
+    right: 50px;
 }
 
+img {
+    width: 100%;
+}
 
 pre {
   display: block;
